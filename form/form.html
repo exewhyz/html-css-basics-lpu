@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="inp-wrapper name">
+            <label for="name">Name:</label>
+            <input id="name" type="text" minlength="3" required/>
+        </div>
+        <div class="inp-wrapper">
+            <label for="email">Email:</label>
+            <input id="email" type="email" required/>
+        </div>
+        <div class="inp-wrapper">
+            <label for="desc">Description:</label>
+            <textarea minlength="10" id="desc" cols="8" rows="3" required></textarea>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
