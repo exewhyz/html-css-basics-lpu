@@ -5,14 +5,15 @@
 }
 
 .board{
-    width: 400px;
+    width: 50vw;
     height: 200px;
     background-color: black;
     display: flex;
     gap: 10px;
     /* flex-direction: column; */
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .pin{
