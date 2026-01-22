@@ -1,0 +1,21 @@
+.parent{
+    height: 800px;
+    width: 300px;
+    background-color: bisque;
+    position: relative;
+}
+
+/* static,relative,absolute,fixed,sticky */
+.child{
+    position: sticky;
+    top: 10px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.child2{
+    position: relative;
+    z-index: 2;
+}
