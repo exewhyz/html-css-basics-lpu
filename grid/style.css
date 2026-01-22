@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60vw;
+    height: 80vh;
+    background-color: cadetblue;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    
+}
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.box1{
+    /* grid-column-start: 3;
+    grid-column-end: 4; */
+    grid-column: 3/4;
+    /* grid-row-start: 3;
+    grid-row-end: 4; */
+    grid-row: 3/4;
+}
