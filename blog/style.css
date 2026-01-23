@@ -45,6 +45,12 @@ ul li a {
   text-decoration: none;
 }
 
+.menu-icon{
+  width: 15px;
+  display: none;
+  cursor: pointer;
+}
+
 .sidebar {
   grid-area: sidebar;
   background-color: rgb(245, 245, 239);
@@ -62,4 +68,22 @@ ul li a {
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+@media screen and (max-width : 600px) and ( orientation: portrait)  {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 3fr 0.5fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "footer";
+  }
+  .navbar ul {
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
 }
