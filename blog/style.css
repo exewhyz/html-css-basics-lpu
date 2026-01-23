@@ -87,3 +87,11 @@ ul li a {
     display: block;
   }
 }
+
+/* @supports (display : grid){
+
+} */
+
+/* @media (425px <= width <= 600px){
+
+} */
