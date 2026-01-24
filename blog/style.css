@@ -35,7 +35,7 @@
   color: red;
 }
 
-.navbar ul {
+.menu {
   display: flex;
   list-style: none;
   gap: 10px;
@@ -45,10 +45,15 @@ ul li a {
   text-decoration: none;
 }
 
-.menu-icon{
+.menu-icon {
   width: 15px;
   display: none;
   cursor: pointer;
+}
+
+.overlay,
+.mob-menu {
+  display: none;
 }
 
 .sidebar {
@@ -70,7 +75,7 @@ ul li a {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
-@media screen and (max-width : 600px) and ( orientation: portrait)  {
+@media screen and (max-width: 600px) and (orientation: portrait) {
   .container {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 3fr 0.5fr;
@@ -80,11 +85,50 @@ ul li a {
       "main"
       "footer";
   }
-  .navbar ul {
+  .menu {
     display: none;
   }
-  .menu-icon{
+  .mob-menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  a:visited{
+    color: black;
+  }
+  .menu-icon {
     display: block;
+  }
+  .close-icon{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    width: 20px;
+    border-radius: 10px;
+  }
+  .overlay {
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    inset: 0;
+    opacity: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .mob-menu {
+    height: 100vh;
+    width: 70%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: -600px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 50px 0;
   }
 }
 
